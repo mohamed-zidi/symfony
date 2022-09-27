@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{{new}}{% endblock %}
+
+{% block body %}
+
+{{form_start(formArticle)}}
+
+    <div>
+        <label for="">Titre</label>
+        {{form_widget(formArticle.title)}}
+    </div>
+    <div>
+        <label for="">Contenu</label>
+        {{form_widget(formArticle.content)}}
+    </div>
+
+    
+
+{{form_end(formArticle)}}
+
+{% endblock %}
